@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Budget App</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="styleNew.css">
+</head>
+<body>
+   <div class="container-fluid">
+    <h3>BUDGET APP</h3>
+
+ <div class="col-11 mx-auto ">
+        <div class="row">
+<div class="col-md-5 my-3" id="budgetform">
+      <!-- budget form -->
+      <form  id="addForm" class=" budget-form">
+       <h5>Please enter your budget</h5>
+       <div class="form-group">
+        <input type="text"  id="amountinput" class="budget-input">
+       </div>
+       <!-- submit button -->
+       <button type="button" class="btn  budget-submit" onclick="getBudgetAmount()">calculate</button>
+
+      </form>
+     </div>
+
+    <div class="col-md-7">
+     <!-- app info-->
+      <div class="row my-3">
+
+       <div class="col-4 text-center ">
+        <h6 class=" info-title">Budget</h6>
+        <div class="budget-icon">
+<i class="fas fa-money-bill-alt"> 
+  <div id="budgetamount"> $0</div></i>
+      </div>
+</div>
+<div class="col-4 text-center ">
+        <h6 class=" info-title">Expense</h6>
+        <div class="expense-icon">
+<i class="far fa-credit-card"> 
+   <div id="expensesamount">$0</div></i>
+      </div>
+</div>
+
+
+<div class="col-4 text-center ">
+        <h6 class=" info-title">Balance</h6>
+        <div class="balance-icon">
+<i class="fas fa-dollar-sign"> 
+   <div id="balanceamount">$0</div></i>
+      </div>
+</div>
+
+     </div>
+</div>
+</div>
+
+<!--expense form-->
+<div class="row">
+     <div class="col-md-5 my-3" id="expense-form">
+      <form id="expForm" class=" expense-form">
+       <h5 >Please enter your expense</h5>
+       <div class="form-group">
+        <input type="text" class=" expense-input" id="amountName">
+       </div>
+       <h5 >Please enter expense amount</h5>
+       <div class="form-group">
+        <input type="number" class="expense-input" id="amountValue">
+       </div>
+      <!-- submit button-->
+       <button type="button"  id="submitExpen" class=" btn1 expense-submit" onclick="addExpenses()">Add expense</button>
+      </form>
+     </div>
+    <div class="col-md-7 my-3">
+      <!-- expense list -->
+       <div class="expValue d-flex justify-content-between" id="expense-list">
+        <h4>Expenses Title</h4><br><div id="expTitleName" class="exp"></div>
+       <h4> Expenses Amount</h4><div id="expValueAmount" class="exp"></div>
+   
+       </div>
+     </div>
+  </div>
+
+</div>
+</div>
+<script src="fun.js"></script>
+
+</body>
+</html>
