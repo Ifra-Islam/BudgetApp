@@ -1,0 +1,80 @@
+.container-fluid{
+	background-color: #F0F0F0;
+	
+}
+h3{
+	margin-left: 30px;
+}
+
+.budget-form {
+  border: 0.15rem solid ;
+  border-color: green;
+  padding: 1rem;
+  border-radius: 0.25rem;
+}
+.budget-input {
+	width: 100%;
+  max-width: 100%;
+border: 2px solid green;
+outline-color: green;
+border-radius: 5px;
+}
+.btn{
+	background-color: #e7e7e7; 
+	color: green;
+	outline-color: green;
+	border: 2px solid green;
+	border-radius: 5px;
+}
+.budget-submit:hover {
+  background: green;
+  color: white;
+}
+.info-title {
+  font-size: 30px;
+}
+.budget {
+  font-size: 20px;
+  color: green;
+}
+.expense {
+  font-size: 20px;
+  color: red;
+}
+.balance {
+  font-size: 20px;
+}
+.budget-icon,
+.expense-icon,
+.balance-icon {
+  font-size: 50px;
+  color: blue;
+}
+.expense-form {
+  border: 2px solid ;
+  border-color: red;
+  padding: 12px;
+  border-radius: 5px;
+}
+.expense-input{
+width: 100%;
+  max-width: 100%;
+border: 2px solid red;
+outline-color: red;
+border-radius: 5px;	
+}
+ .btn1 {
+	background-color: #e7e7e7; 
+	color: red;
+	outline-color: red;
+	border: 2px solid red;
+	border-radius: 5px;
+}
+.expense-submit:hover {
+  background: red;
+  color: white;
+}
+.exp{
+	text-align: center;
+	font-size: 20px;
+}
